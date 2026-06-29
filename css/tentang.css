@@ -1,0 +1,19 @@
+.nav-link{
+
+    color:white;
+
+    padding-bottom:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-link.active{
+
+    color:#F4C542;
+
+    border-bottom:2px solid #F4C542;
+
+}

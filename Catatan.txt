@@ -1,0 +1,56 @@
+struktur folder
+yayasan/
+│
+├── index.html
+├── tentang.html
+├── ponpes.html
+├── tk.html
+├── mdt.html
+├── smpit.html
+├── smait.html
+├── berita.html
+├── galeri.html
+├── kontak.html
+│
+├── css/
+│     style.css
+│
+├── js/
+│     script.js
+│
+├── img/
+│
+├── icons/
+│
+└── assets/
+
+
+
+yaspimiyah/
+│
+├── index.html
+├── tentang.html
+├── ponpes.html
+├── kontak.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   ├── script.js
+│   ├── navbar.js
+│   ├── slider.js
+│   ├── counter.js
+│   └── gallery.js
+│
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── videos/
+│
+└── favicon.ico
+
+
+
+
+
