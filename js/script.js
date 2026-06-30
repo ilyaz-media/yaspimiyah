@@ -75,3 +75,21 @@ modal.addEventListener("click", (e) => {
     }
 
 });
+
+
+
+// ktsp ================
+
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach((accordion) => {
+
+    accordion.addEventListener("click", () => {
+
+        const panel = accordion.nextElementSibling;
+
+        panel.classList.toggle("hidden");
+
+    });
+
+});
