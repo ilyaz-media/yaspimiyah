@@ -26,3 +26,52 @@ links.forEach(link => {
     "underline-offset-8");
     }
 });
+
+
+// vidio modal
+
+const btn = document.getElementById("videoBtn");
+
+const modal = document.getElementById("videoModal");
+
+const close = document.getElementById("closeVideo");
+
+const video = document.getElementById("videoPlayer");
+
+btn.addEventListener("click", () => {
+
+    modal.classList.remove("hidden");
+
+    modal.classList.add("flex");
+
+    video.play();
+
+});
+
+close.addEventListener("click", () => {
+
+    modal.classList.remove("flex");
+
+    modal.classList.add("hidden");
+
+    video.pause();
+
+    video.currentTime = 0;
+
+});
+
+modal.addEventListener("click", (e) => {
+
+    if (e.target === modal) {
+
+        modal.classList.remove("flex");
+
+        modal.classList.add("hidden");
+
+        video.pause();
+
+        video.currentTime = 0;
+
+    }
+
+});

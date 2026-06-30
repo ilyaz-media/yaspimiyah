@@ -54,3 +54,85 @@ yaspimiyah/
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<title>TK Kober</title>
+</head>
+
+<body class="bg-white">
+
+<!-- ================= NAVBAR ================= -->
+
+<nav id="navbar"
+class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto">
+
+        <div class="flex justify-between items-center py-5 px-6">
+
+            <!-- Logo -->
+
+            <div class="flex items-center gap-3">
+
+                <div
+                class="w-12 h-12 rounded-full bg-yellow-500"></div>
+
+                <div>
+
+                    <h1 class="text-white font-bold text-2xl">
+                        YASPIMIYAH
+                    </h1>
+
+                    <p class="text-xs text-white/70">
+                        Yayasan Pendidikan Islam
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Menu -->
+
+            <ul class="hidden lg:flex gap-10 text-white">
+
+                <li><a href="#">Beranda</a></li>
+
+                <li><a href="#">Tentang Yayasan</a></li>
+
+                <li class="text-yellow-400 border-b-2 border-yellow-400 pb-1">
+                    <a href="#">Unit Pendidikan</a>
+                </li>
+
+                <li><a href="#">Berita</a></li>
+
+                <li><a href="#">Galeri</a></li>
+
+                <li><a href="#">Kontak</a></li>
+
+            </ul>
+
+            <button
+            class="border border-white rounded-lg px-6 py-3 text-white hover:bg-white hover:text-green-900 transition">
+
+                Donasi Sekarang
+
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
