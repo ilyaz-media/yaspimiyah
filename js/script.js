@@ -181,3 +181,13 @@ accordions.forEach((accordion) => {
     });
 
 });
+
+
+// running text
+// Duplikasi isi marquee agar scrolling terus-menerus
+const marquee = document.querySelector(".marquee-content");
+
+marquee.innerHTML += marquee.innerHTML;
+
+// Jalankan ikon Lucide
+lucide.createIcons();
