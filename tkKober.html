@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tkKober.css">
     <script>
         tailwind.config = {
             theme: {
@@ -183,69 +183,63 @@
     </header>
 
     <!-- =============== hero======================= -->
-    <section class="relative   mt-[20%] md:mt-[10%] lg:mt-[5%] py-10   overflow-hidden">
+    <section class="relative overflow-hidden bg-gradient-to-b from-white to-green-50 py-20 lg:py-28">
 
-        <!-- Background -->
-        <img src="Assets/tk-kober/2.jpeg" class="absolute inset-0 w-full h-full object-cover" alt="">
+    <!-- Background Blur -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-green-200 rounded-full blur-3xl opacity-40"></div>
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-[#063A2D]/95 via-[#063A2D]/80 to-transparent">
-        </div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-yellow-200 rounded-full blur-3xl opacity-30"></div>
 
+    <div class="relative max-w-7xl mx-auto px-6">
 
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Content -->
+            <!-- ========================= -->
+            <!-- LEFT CONTENT -->
+            <!-- ========================= -->
 
-        <div class="relative z-20 max-w-7xl mx-auto h-full flex items-center px-6">
+            <div>
 
-            <div class="max-w-xl h-full flex flex-col justify-center">
+                <span
+                    class="inline-flex items-center rounded-full bg-green-100 text-green-700 px-5 py-2 text-sm font-semibold">
 
-                <!-- Breadcrumb -->
+                     Unit Pendidikan
 
-                <div
-                    class="inline-flex w-fit items-center gap-2 border border-yellow-500 rounded-full px-5 py-2 text-yellow-400 text-xs mb-8">
+                </span>
 
-                    BERANDA > UNIT PENDIDIKAN > TK KOBER MIFTAHUL HIDAYAH
-
-                </div>
-
-                <!-- Heading -->
-
-                <h1 class="text-3xl lg:text-5xl font-bold leading-tight text-white">
+                <h1 class="mt-6 text-4xl md:text-5xl lg:text-5xl font-bold leading-tight text-slate-900">
 
                     TK KOBER
 
-                    <br>
+                    <span class="block text-primary">
 
-                    <span class="text-yellow-400">
-                        MIFTAHUL HIDAYAH
+                        YASPIMIYAH
+
                     </span>
 
                 </h1>
 
-                <!-- Paragraph -->
+                <p class="mt-8 text-slate-600 leading-8 text-lg">
 
-                <p class="mt-8 text-gray-200 leading-8">
-
-                    Yayasan Pendidikan Islam Miftahul Hidayah (Yaspimiyah)
-                    adalah lembaga pendidikan Islam yang berkomitmen
-                    mencetak generasi islami, berilmu, berakhlak mulia,
-                    serta siap berkontribusi bagi agama, bangsa,
-                    dan negara.
+                    Membentuk generasi islami yang cerdas, mandiri,
+                    berakhlak mulia, serta memiliki karakter Qurani
+                    melalui pendidikan yang menyenangkan dan penuh kasih sayang.
 
                 </p>
 
-                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                <!-- Buttons -->
+
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
 
                     <a href="#"
-                        class="flex-1 rounded-full bg-primary py-4 text-center font-semibold text-white transition hover:bg-green-800">
+                        class="rounded-full bg-primary px-8 py-4 text-center text-white font-semibold hover:bg-green-800 transition">
 
                         Daftar Sekarang
 
                     </a>
 
                     <a href="#"
-                        class="flex-1 bg-white rounded-full border border-primary py-4 text-center font-semibold text-primary transition hover:bg-primary hover:text-white">
+                        class="rounded-full border-2 border-primary px-8 py-4 text-center text-primary font-semibold hover:bg-primary hover:text-white transition">
 
                         Hubungi Kami
 
@@ -255,9 +249,63 @@
 
             </div>
 
+            <!-- ========================= -->
+            <!-- RIGHT IMAGE -->
+            <!-- ========================= -->
+
+            <div class="relative">
+
+                <!-- Main Image -->
+
+                <img src="Assets/tk-kober/2.jpeg"
+                    class="rounded-[40px] shadow-2xl object-cover w-full "
+                    alt="TK Kober">
+
+                <!-- Floating Card -->
+
+                <div
+                    class="absolute -bottom-6 -left-6 bg-white rounded-3xl shadow-xl p-5 floating">
+
+                    <h3 class="text-3xl font-bold text-primary">
+
+                        120+
+
+                    </h3>
+
+                    <p class="text-slate-600">
+
+                        Peserta Didik
+
+                    </p>
+
+                </div>
+
+                <!-- Floating Card -->
+
+                <div
+                    class="absolute top-8 -right-6 bg-white rounded-3xl shadow-xl p-5 floating">
+
+                    <h3 class="text-3xl font-bold text-primary">
+
+                        12
+
+                    </h3>
+
+                    <p class="text-slate-600">
+
+                        Guru Profesional
+
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- ===========================
@@ -496,73 +544,67 @@
 
     </section>
 
+<!-- visi dan misi -->
+  <section class="relative py-24 overflow-hidden bg-gradient-to-b from-slate-50 via-white to-emerald-50">
 
-   <!-- ===========================
-        VISI & MISI
-=========================== -->
-<section class="py-24 bg-gradient-to-b from-[#F8FAF9] to-white">
+    <!-- Blur Decoration -->
+    <div class="absolute -top-32 -left-20 w-72 h-72 bg-green-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-emerald-200/30 rounded-full blur-3xl"></div>
 
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="relative max-w-7xl mx-auto px-6">
 
-        <!-- Judul -->
-        <div
-            class="text-center mb-16"
-            data-aos="fade-up">
+        <!-- Heading -->
+        <div class="text-center mb-20" data-aos="fade-up">
 
-            <span class="text-green-700 font-semibold uppercase tracking-[3px]">
-
+            <span class="inline-block px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold uppercase tracking-widest text-sm">
                 TK KOBER YASPIMIYAH
-
             </span>
 
-            <h2 class="text-5xl font-bold text-gray-800 mt-3">
-
-                Visi & <span class="text-green-700">Misi</span>
-
+            <h2 class="text-5xl font-bold text-slate-800 mt-6">
+                Visi &
+                <span class="text-green-700">
+                    Misi
+                </span>
             </h2>
 
-            <div class="w-24 h-1 bg-green-700    mx-auto rounded-full mt-5 mb-6"></div>
+            <div class="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto rounded-full mt-6"></div>
 
-            <p class="text-gray-500 max-w-2xl mx-auto leading-8">
-
-                Komitmen kami dalam membentuk generasi yang
-                cerdas, ceria, mandiri, dan berakhlak mulia
-                berdasarkan nilai-nilai Islam.
-
+            <p class="text-slate-500 max-w-2xl mx-auto mt-6 leading-8">
+                Komitmen kami dalam membentuk generasi yang cerdas,
+                ceria, mandiri, dan berakhlak mulia berdasarkan
+                nilai-nilai Islam.
             </p>
 
         </div>
 
-        <!-- Card -->
+        <!-- Content -->
         <div class="grid lg:grid-cols-2 gap-10">
 
-            <!-- ================= VISI ================= -->
-
+            <!-- VISI -->
             <div
                 data-aos="fade-right"
-                class="group bg-white rounded-3xl shadow-lg border-t-8 border-primary p-10 hover:-translate-y-3 hover:shadow-2xl transition-all duration-500">
+                class="group bg-white rounded-[32px] border border-slate-200 shadow-lg p-10 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
 
                 <!-- Icon -->
                 <div
-                    class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
+                    class="w-20 h-20 rounded-3xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition">
 
-                    <i class="fa-solid fa-bullseye text-4xl text-primary"></i>
+                    <i data-lucide="target" class="w-10 h-10 text-white"></i>
 
                 </div>
 
-                <h3 class="text-3xl font-bold text-gray-800 mb-6">
-
+                <h3 class="text-3xl font-bold text-slate-800 mt-8">
                     Visi
-
                 </h3>
 
-                <p class="text-gray-600 leading-9 text-lg">
+                <p class="mt-6 text-lg leading-9 text-slate-600">
 
                     Terwujudnya generasi yang
 
-                    <span class="font-bold text-primary">
+                    <span class="font-bold text-green-700">
 
-                        CERDAS, CERIA, MANDIRI,
+                        CERDAS, CERIA,
+                        MANDIRI,
                         dan BERAKHLAK MULIA (CERIA).
 
                     </span>
@@ -571,72 +613,77 @@
 
             </div>
 
-            <!-- ================= MISI ================= -->
-
+            <!-- MISI -->
             <div
                 data-aos="fade-left"
-                class="group bg-white rounded-3xl shadow-lg border-t-8 border-primary p-10 hover:-translate-y-3 hover:shadow-2xl transition-all duration-500">
+                class="group bg-white rounded-[32px] border border-slate-200 shadow-lg p-10 hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
 
                 <!-- Icon -->
                 <div
-                    class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-8 transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6">
+                    class="w-20 h-20 rounded-3xl bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center shadow-lg group-hover:-rotate-6 group-hover:scale-110 transition">
 
-                    <i class="fa-solid fa-book-open text-4xl text-primary"></i>
+                    <i data-lucide="book-open" class="w-10 h-10 text-white"></i>
 
                 </div>
 
-                <h3 class="text-3xl font-bold text-gray-800 mb-6">
-
+                <h3 class="text-3xl font-bold text-slate-800 mt-8">
                     Misi
-
                 </h3>
 
-                <ul class="space-y-5">
+                <ul class="space-y-6 mt-8">
 
-                    <li class="flex items-start gap-4">
+                    <li class="flex gap-4">
 
-                        <i class="fa-solid fa-circle-check text-primary text-xl mt-1"></i>
+                        <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
 
-                        <span class="text-gray-600 leading-7">
+                            <i data-lucide="check" class="w-5 h-5 text-green-600"></i>
 
+                        </div>
+
+                        <span class="text-slate-600 leading-7">
                             Menyelenggarakan pendidikan yang bermutu dan berorientasi pada perkembangan anak.
-
                         </span>
 
                     </li>
 
-                    <li class="flex items-start gap-4">
+                    <li class="flex gap-4">
 
-                        <i class="fa-solid fa-circle-check text-primary text-xl mt-1"></i>
+                        <div class="w-10 h-10 rounded-xl bg-yellow-100 flex items-center justify-center flex-shrink-0">
 
-                        <span class="text-gray-600 leading-7">
+                            <i data-lucide="check" class="w-5 h-5 text-yellow-600"></i>
 
+                        </div>
+
+                        <span class="text-slate-600 leading-7">
                             Menciptakan pembelajaran yang aktif, kreatif, inovatif, dan menyenangkan.
-
                         </span>
 
                     </li>
 
-                    <li class="flex items-start gap-4">
+                    <li class="flex gap-4">
 
-                        <i class="fa-solid fa-circle-check text-primary  text-xl mt-1"></i>
+                        <div class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
 
-                        <span class="text-gray-600 leading-7">
+                            <i data-lucide="check" class="w-5 h-5 text-blue-600"></i>
 
+                        </div>
+
+                        <span class="text-slate-600 leading-7">
                             Menanamkan karakter mandiri, disiplin, dan tanggung jawab sejak usia dini.
-
                         </span>
 
                     </li>
 
-                    <li class="flex items-start gap-4">
+                    <li class="flex gap-4">
 
-                        <i class="fa-solid fa-circle-check text-primary text-xl mt-1"></i>
+                        <div class="w-10 h-10 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
 
-                        <span class="text-gray-600 leading-7">
+                            <i data-lucide="check" class="w-5 h-5 text-purple-600"></i>
 
+                        </div>
+
+                        <span class="text-slate-600 leading-7">
                             Membiasakan peserta didik berakhlak mulia sesuai nilai-nilai Islam.
-
                         </span>
 
                     </li>
@@ -658,15 +705,15 @@
 
     <div class="max-w-7xl mx-auto px-6">
 
-        <!-- Judul -->
+        <!-- Heading -->
         <div class="text-center mb-16">
 
             <span class="uppercase tracking-[3px] text-green-700 font-semibold">
                 TK KOBER YASPIMIYAH
             </span>
 
-            <h2 class=" text-3xl md:text-5xl font-bold text-gray-800 mt-3">
-                Karakteristik <span class="text-primary"> Pembelajaran</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mt-3">
+                Karakteristik <span class="text-primary">Pembelajaran</span>
             </h2>
 
             <div class="w-24 h-1 bg-primary mx-auto rounded-full mt-5 mb-6"></div>
@@ -679,15 +726,15 @@
 
         </div>
 
-        <!-- Card -->
+        <!-- Cards -->
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <!-- Card 1 -->
-            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center border border-green-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center transition duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <div class="w-20 h-20 mx-auto rounded-2xl bg-green-100 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
 
-                    <i class="fa-solid fa-mosque text-4xl text-primary  "></i>
+                    <i data-lucide="book-heart" class="w-10 h-10 text-green-600"></i>
 
                 </div>
 
@@ -703,11 +750,11 @@
             </div>
 
             <!-- Card 2 -->
-            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center border border-yellow-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center transition duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <div class="w-20 h-20 mx-auto rounded-2xl bg-yellow-100 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
 
-                    <i class="fa-solid fa-palette text-4xl text-primary "></i>
+                    <i data-lucide="blocks" class="w-10 h-10 text-yellow-600"></i>
 
                 </div>
 
@@ -717,17 +764,17 @@
 
                 <p class="text-gray-500 mt-4 leading-7">
                     Proses belajar dikemas secara kreatif melalui permainan
-                    agar anak lebih aktif dan menyenangkan.
+                    agar anak lebih aktif, antusias, dan menyenangkan.
                 </p>
 
             </div>
 
             <!-- Card 3 -->
-            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center border border-blue-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center transition duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <div class="w-20 h-20 mx-auto rounded-2xl bg-blue-100 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
 
-                    <i class="fa-solid fa-puzzle-piece text-4xl text-primary"></i>
+                    <i data-lucide="layout-grid" class="w-10 h-10 text-blue-600"></i>
 
                 </div>
 
@@ -743,11 +790,11 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
+            <div class="group bg-white rounded-3xl shadow-lg p-8 text-center border border-purple-100 transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl">
 
-                <div class="w-20 h-20 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center transition duration-500 group-hover:scale-110 group-hover:rotate-6">
+                <div class="w-20 h-20 mx-auto rounded-2xl bg-purple-100 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
 
-                    <i class="fa-solid fa-flask text-4xl text-primary"></i>
+                    <i data-lucide="flask-conical" class="w-10 h-10 text-purple-600"></i>
 
                 </div>
 
@@ -771,46 +818,53 @@
 <!-- ===========================
      STRUKTUR KURIKULUM
 =========================== -->
-<section class="py-24 bg-[#f8faf8]">
+<section class="relative py-28 overflow-hidden bg-gradient-to-b from-green-50 via-white to-green-50">
 
-    <div class="max-w-7xl mx-auto px-6">
+    <!-- Background Decoration -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-green-200/30 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-yellow-200/30 rounded-full blur-3xl"></div>
 
-        <!-- Judul -->
-        <div class="text-center">
+    <div class="relative max-w-7xl mx-auto px-6">
 
-            <span class="text-green-700 font-semibold uppercase tracking-widest">
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto">
+
+            <span class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-5 py-2 rounded-full font-semibold uppercase tracking-widest text-sm">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
                 Program Pembelajaran
             </span>
 
-            <h2 class="text-5xl font-bold text-[#0B3B2E] mt-3">
+            <h2 class="text-5xl md:text-6xl font-bold text-[#0B3B2E] mt-6">
                 Struktur Kurikulum
             </h2>
 
-            <p class="max-w-2xl mx-auto text-gray-600 mt-5">
+            <div class="w-28 h-1 rounded-full bg-gradient-to-r from-green-500 to-emerald-600 mx-auto mt-6"></div>
+
+            <p class="mt-8 text-lg leading-8 text-gray-600">
                 Kurikulum kami dirancang untuk mengembangkan seluruh aspek
-                pertumbuhan anak melalui pembelajaran yang menyenangkan,
-                islami, kreatif, dan sesuai tahap perkembangan.
+                perkembangan anak melalui pembelajaran yang islami,
+                menyenangkan, kreatif, dan sesuai tahap usia dini.
             </p>
 
         </div>
 
-        <!-- Card -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center text-3xl mb-6">
-                    🕌
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="book-heart" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Agama & Moral
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
+                <p class="mt-4 text-gray-600 leading-8">
                     Menanamkan akhlak mulia, ibadah, doa harian, adab,
                     serta kecintaan kepada Allah dan Rasul-Nya sejak dini.
                 </p>
@@ -818,101 +872,102 @@
             </div>
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-yellow-100 flex items-center justify-center text-3xl mb-6">
-                    😊
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="heart-handshake" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Sosial Emosional
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
-                    Melatih anak bekerja sama, berbagi, percaya diri,
-                    mandiri, serta mampu mengelola emosinya dengan baik.
+                <p class="mt-4 text-gray-600 leading-8">
+                    Melatih kerja sama, kepedulian, disiplin,
+                    percaya diri, dan kemampuan mengelola emosi.
                 </p>
 
             </div>
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-3xl mb-6">
-                    🗣️
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="languages" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Bahasa
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
-                    Mengembangkan kemampuan berbicara, mendengar,
-                    membaca awal, serta berkomunikasi dengan baik.
+                <p class="mt-4 text-gray-600 leading-8">
+                    Mengembangkan kemampuan berbicara,
+                    mendengar, membaca awal, dan komunikasi.
                 </p>
 
             </div>
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center text-3xl mb-6">
-                    🏃
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-red-500 to-rose-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="person-standing" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Motorik
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
+                <p class="mt-4 text-gray-600 leading-8">
                     Mengembangkan motorik halus dan kasar melalui
-                    aktivitas fisik, olahraga, dan permainan edukatif.
+                    aktivitas fisik dan permainan edukatif.
                 </p>
 
             </div>
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-3xl mb-6">
-                    🧠
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="brain" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Kognitif
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
-                    Mengasah kemampuan berpikir logis, berhitung,
-                    memecahkan masalah, dan rasa ingin tahu anak.
+                <p class="mt-4 text-gray-600 leading-8">
+                    Mengembangkan kemampuan berpikir logis,
+                    memecahkan masalah, dan rasa ingin tahu.
                 </p>
 
             </div>
 
             <!-- Card -->
-            <div
-                class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300">
+            <div class="group bg-white rounded-3xl p-8 shadow-md border border-gray-100 hover:shadow-2xl hover:-translate-y-3 transition-all duration-500">
 
-                <div
-                    class="w-16 h-16 rounded-full bg-pink-100 flex items-center justify-center text-3xl mb-6">
-                    🎨
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-pink-500 to-fuchsia-600 flex items-center justify-center shadow-lg group-hover:rotate-6 group-hover:scale-110 transition-all duration-300">
+
+                    <i data-lucide="palette" class="w-8 h-8 text-white"></i>
+
                 </div>
 
-                <h3 class="text-2xl font-bold text-[#0B3B2E] mb-3">
+                <h3 class="mt-6 text-2xl font-bold text-[#0B3B2E]">
                     Seni
                 </h3>
 
-                <p class="text-gray-600 leading-relaxed">
-                    Menumbuhkan kreativitas melalui menggambar,
-                    mewarnai, bernyanyi, menari, dan berbagai karya seni.
+                <p class="mt-4 text-gray-600 leading-8">
+                    Mengembangkan kreativitas melalui
+                    menggambar, mewarnai, bernyanyi,
+                    menari, dan berbagai karya seni.
                 </p>
 
             </div>
@@ -922,6 +977,7 @@
     </div>
 
 </section>
+
     <!-- muatan lokal -->
   <!-- ===========================
      MUATAN LOKAL
@@ -1046,9 +1102,11 @@
     </div>
 
 </section>
-   <!-- ===========================
+
+<!-- ==========================================
      INFORMASI LAINNYA
-=========================== -->
+=========================================== -->
+
 <section class="py-24 bg-gradient-to-b from-[#eef8ff] via-white to-[#f8fcff]">
 
     <div class="max-w-5xl mx-auto px-6">
@@ -1075,8 +1133,7 @@
         <div class="space-y-6">
 
             <!-- Item 1 -->
-            <div
-                class="bg-white rounded-3xl shadow-md border border-sky-100 overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-white rounded-3xl shadow-md border border-sky-100 overflow-hidden">
 
                 <button
                     class="accordion flex justify-between items-center w-full p-7 text-left">
@@ -1093,40 +1150,48 @@
 
                     </div>
 
-                    <span class="text-3xl text-sky-600 font-light">
+                    <span
+                        class="accordion-icon text-3xl text-sky-600 transition-transform duration-300">
                         +
                     </span>
 
                 </button>
 
-                <div class="panel hidden bg-sky-50">
+                <div
+                    class="panel max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out bg-sky-50">
 
                     <div class="p-7">
 
-                        <ul class="grid sm:grid-cols-2 gap-4">
+                        <ul class="grid sm:grid-cols-2 gap-5">
 
-                            <li class="flex items-center gap-3">
-                                ✅ Melukis
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-emerald-100 flex justify-center items-center">🎨</span>
+                                Melukis
                             </li>
 
-                            <li class="flex items-center gap-3">
-                                💃 Tari
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-pink-100 flex justify-center items-center">💃</span>
+                                Tari
                             </li>
 
-                            <li class="flex items-center gap-3">
-                                💻 Komputer Kids
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-blue-100 flex justify-center items-center">💻</span>
+                                Komputer Kids
                             </li>
 
-                            <li class="flex items-center gap-3">
-                                🇬🇧 Bahasa Inggris
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-yellow-100 flex justify-center items-center">📖</span>
+                                Bahasa Inggris
                             </li>
 
-                            <li class="flex items-center gap-3">
-                                🏊 Renang
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-cyan-100 flex justify-center items-center">🏊</span>
+                                Renang
                             </li>
 
-                            <li class="flex items-center gap-3">
-                                🌳 Outbond
+                            <li class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-full bg-green-100 flex justify-center items-center">🌳</span>
+                                Outbound
                             </li>
 
                         </ul>
@@ -1138,8 +1203,7 @@
             </div>
 
             <!-- Item 2 -->
-            <div
-                class="bg-white rounded-3xl shadow-md border border-green-100 overflow-hidden hover:shadow-xl transition duration-300">
+            <div class="bg-white rounded-3xl shadow-md border border-green-100 overflow-hidden">
 
                 <button
                     class="accordion flex justify-between items-center w-full p-7 text-left">
@@ -1156,27 +1220,25 @@
 
                     </div>
 
-                    <span class="text-3xl text-green-600 font-light">
+                    <span
+                        class="accordion-icon text-3xl text-green-600 transition-transform duration-300">
                         +
                     </span>
 
                 </button>
 
-                <div class="panel hidden bg-green-50">
+                <div
+                    class="panel max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out bg-green-50">
 
                     <div class="p-7">
 
                         <ul class="space-y-4">
 
-                            <li>✔️ Observasi kegiatan harian.</li>
-
-                            <li>✔️ Checklist capaian perkembangan.</li>
-
-                            <li>✔️ Catatan anekdot guru.</li>
-
-                            <li>✔️ Dokumentasi hasil karya anak.</li>
-
-                            <li>✔️ Laporan perkembangan kepada orang tua.</li>
+                            <li>✔️ Observasi kegiatan harian</li>
+                            <li>✔️ Checklist capaian perkembangan</li>
+                            <li>✔️ Catatan anekdot guru</li>
+                            <li>✔️ Dokumentasi hasil karya anak</li>
+                            <li>✔️ Laporan perkembangan kepada orang tua</li>
 
                         </ul>
 
@@ -1848,6 +1910,12 @@
 
     </div>
     <script src="js/script.js">
+    </script>
+
+    <!-- lucide -->
+     <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
     </script>
 
  
