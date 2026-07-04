@@ -104,3 +104,33 @@ counters.forEach(counter => {
     }, 20);
 
 });
+
+
+
+// daftar guru
+
+const button = document.getElementById("toggleTeacher");
+
+const hiddenCards = document.querySelectorAll(".teacher-card.hidden");
+
+let opened = false;
+
+button.addEventListener("click", () => {
+
+    opened = !opened;
+
+    hiddenCards.forEach(card => {
+
+        if (opened) {
+            card.classList.remove("hidden");
+        } else {
+            card.classList.add("hidden");
+        }
+
+    });
+
+    button.textContent = opened
+        ? "Lihat Lebih Sedikit"
+        : "Lihat Selengkapnya";
+
+});
