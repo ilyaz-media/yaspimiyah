@@ -190,4 +190,6 @@ const marquee = document.querySelector(".marquee-content");
 marquee.innerHTML += marquee.innerHTML;
 
 // Jalankan ikon Lucide
-lucide.createIcons();
+
+
+
