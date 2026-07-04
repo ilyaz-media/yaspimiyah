@@ -109,28 +109,57 @@ counters.forEach(counter => {
 
 // daftar guru
 
-const button = document.getElementById("toggleTeacher");
+const btn = document.getElementById("toggleBtn");
+const icon = document.getElementById("icon");
 
-const hiddenCards = document.querySelectorAll(".teacher-card.hidden");
+const container = document.getElementById("moreTeachers");
+const cards = document.querySelectorAll(".extra");
 
-let opened = false;
+let open = false;
 
-button.addEventListener("click", () => {
+btn.addEventListener("click", () => {
 
-    opened = !opened;
+    open = !open;
 
-    hiddenCards.forEach(card => {
+    if (open) {
 
-        if (opened) {
-            card.classList.remove("hidden");
-        } else {
-            card.classList.add("hidden");
-        }
+        container.style.maxHeight = container.scrollHeight + "px";
 
-    });
+        cards.forEach((card, index) => {
 
-    button.textContent = opened
-        ? "Lihat Lebih Sedikit"
-        : "Lihat Selengkapnya";
+            setTimeout(() => {
+
+                card.classList.add("show");
+
+            }, index * 120);
+
+        });
+
+        btn.querySelector("span").textContent = "Lihat Lebih Sedikit";
+
+        icon.style.transform = "rotate(180deg)";
+
+    } else {
+
+        cards.forEach((card, index) => {
+
+            setTimeout(() => {
+
+                card.classList.remove("show");
+
+            }, index * 80);
+
+        });
+
+        setTimeout(() => {
+
+            container.style.maxHeight = "0";
+
+        }, 250);
+
+        btn.querySelector("span").textContent = "Lihat Selengkapnya";
+
+        icon.style.transform = "rotate(0deg)";
+    }
 
 });

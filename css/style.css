@@ -67,3 +67,40 @@ nav a{
     }
 
 }
+
+
+
+/* daftar guru */
+
+.teacher-card{
+
+    background:white;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    border:1px solid #e5e7eb;
+
+}
+
+.teacher-img{
+
+    width:100%;
+    height:320px;
+    object-fit:cover;
+
+}
+
+.extra{
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:.6s;
+
+}
+
+.extra.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
