@@ -135,14 +135,14 @@ btn.addEventListener("click", () => {
 
         });
 
-        btn.querySelector("span").textContent = "Lihat Lebih Sedikit";
+        btn.querySelector("span").textContent = "Lihat Lebih Sedikit ";
 
         icon.style.transform = "rotate(180deg)";
 
     } else {
 
         cards.forEach((card, index) => {
-
+ 
             setTimeout(() => {
 
                 card.classList.remove("show");
