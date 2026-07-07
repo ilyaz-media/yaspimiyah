@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo -->
+    <link rel="icon" type="image/png" href="Assets/yayasan/YPI MIFTAHUL HIDAYAH.png">
+
+    <title>YASPIMIYAH | Yayasan Pendidikan Islam Miftahul Hidayah</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/tkKober.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // primary: '#0B5D3B',
+                        primary: 'oklch(59.6% 0.145 163.225)',
+
+                        secondary: '#D4A017',
+                        dark: '#0F172A',
+                        light: '#F8FAFC'
+                    },
+
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+
+                    boxShadow: {
+                        premium: '0 15px 35px rgba(0,0,0,.12)',
+                    },
+
+                    borderRadius: {
+                        xl2: '20px'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-poppins bg-white text-gray-700">
+    <!-- =============== header ==================== -->
+    <header class="fixed top-0 left-0 w-full z-50">
+
+        <nav class="bg-white/80 backdrop-blur-lg border-b border-gray-200">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <div class="flex justify-between items-center h-20">
+
+                    <!-- Logo -->
+                    <a href="index.html" class="flex items-center gap-3">
+
+                        <div class="w-12 h-12 rounded-xl  text-white flex items-center justify-center text-xl">
+
+                            <img src="Assets/yayasan/YPI MIFTAHUL HIDAYAH.png" alt="">
+
+                        </div>
+
+                        <div>
+
+                            <h1 class="font-bold text-lg text-primary">
+                                YASPIMIYAH
+                            </h1>
+
+                            <p class="text-xs text-gray-500">
+                                Yayasan Pendidikan Islam
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Menu -->
+                    <ul class="hidden lg:flex items-center gap-8">
+
+                        <li>
+                            <a href="index.html" class="hover:text-primary transition">
+                                Beranda
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tentang.html" class="hover:text-primary transition">
+                                Tentang
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#unit" class="hover:text-primary transition">
+                                Unit Pendidikan
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#berita" class="hover:text-primary transition">
+                                Berita
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="hover:text-primary transition">
+                                Galeri
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="index.html#cta" class="hover:text-primary transition">
+                                Kontak
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- Button -->
+
+                    <div class="hidden lg:flex items-center gap-4">
+
+                        <a href="#"
+                            class="bg-primary hover:bg-green-800 duration-300 text-white px-6 py-3 rounded-full font-medium">
+
+                            Donasi Sekarang
+
+                        </a>
+
+                    </div>
+
+                    <!-- Mobile Menu -->
+
+                    <button class="lg:hidden text-2xl">
+
+                        <i id="menu-btn" class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+        <!-- Mobile Menu -->
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+
+            <ul class="flex flex-col p-6 gap-5">
+
+                <li><a href="#" class="hover:text-primary">Beranda</a></li>
+
+                <li><a href="#" class="hover:text-primary">Tentang</a></li>
+
+                <li><a href="#" class="hover:text-primary">Unit Pendidikan</a></li>
+
+                <li><a href="#" class="hover:text-primary">Berita</a></li>
+
+                <li><a href="#" class="hover:text-primary">Galeri</a></li>
+
+                <li><a href="#" class="hover:text-primary">Kontak</a></li>
+
+                <a href="#" class="bg-primary text-white py-3 rounded-full text-center">
+
+                    Donasi Sekarang
+
+                </a>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <!-- =========================================
+            HERO MADRASAH DINIYAH
+========================================== -->
+<section class="relative overflow-hidden bg-slate-50 py-24">
+
+    <!-- Background -->
+    <div class="absolute -top-40 right-0 w-[500px] h-[500px] bg-emerald-300/20 blur-[140px] rounded-full"></div>
+
+    <div class="absolute -bottom-52 -left-32 w-[450px] h-[450px] bg-amber-300/20 blur-[130px] rounded-full"></div>
+
+    <!-- Pattern -->
+    <div class="absolute inset-0 opacity-[0.04]"
+        style="background-image:linear-gradient(#065f46 1px, transparent 1px),linear-gradient(to right,#065f46 1px,transparent 1px);background-size:60px 60px;">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 items-center gap-20">
+
+            <!-- ======================================
+                    LEFT
+            ======================================= -->
+
+            <div>
+
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-3 rounded-full bg-emerald-100 px-5 py-2">
+
+                    <i class="fa-solid fa-mosque text-primary"></i>
+
+                    <span class="font-semibold text-primary">
+                        Madrasah Diniyah Takmiliyah
+                    </span>
+
+                </div>
+
+                <!-- Heading -->
+                <h1 class="mt-8 text-5xl lg:text-6xl font-black leading-tight text-slate-900">
+
+                    MDT
+
+                    <span class="text-primary">
+                        MIFTAHUL HIDAYAH
+                    </span>
+
+                </h1>
+
+                <p class="mt-8 text-lg leading-9 text-slate-600 max-w-xl">
+
+                    Membentuk generasi muslim yang berakhlakul karimah,
+                    mencintai Al-Qur'an, memahami ilmu agama,
+                    serta mengamalkan nilai-nilai Islam dalam kehidupan
+                    sehari-hari.
+
+                </p>
+
+                <!-- Feature -->
+                <div class="mt-10 grid gap-5">
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+
+                            <i class="fa-solid fa-book-quran text-primary"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+                                Tahsin & Tahfidz Al-Qur'an
+                            </h4>
+
+                            <p class="text-slate-500">
+                                Membiasakan membaca dan menghafal Al-Qur'an
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+
+                            <i class="fa-solid fa-mosque text-primary"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+                                Ilmu Keislaman
+                            </h4>
+
+                            <p class="text-slate-500">
+                                Fiqih, Aqidah, Akhlak, Hadits & Bahasa Arab
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+
+                            <i class="fa-solid fa-hands-praying text-primary"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+                                Pembinaan Akhlak Islami
+                            </h4>
+
+                            <p class="text-slate-500">
+                                Membiasakan adab dan ibadah sejak dini
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Button -->
+                <div class="mt-12 flex flex-wrap gap-5">
+
+                    <a href="#"
+                        class="bg-primary text-white px-8 py-4 rounded-full font-semibold shadow-xl hover:scale-105 duration-300">
+
+                        Daftar Sekarang
+
+                    </a>
+
+                    <a href="#"
+                        class="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold hover:bg-primary hover:text-white duration-300">
+
+                        Lihat Profil
+
+                    </a>
+
+                </div>
+
+                <!-- Statistics -->
+                <div class="mt-16 grid grid-cols-3 gap-5">
+
+                    <div class="bg-white rounded-3xl shadow-xl p-6">
+
+                        <h3 class="text-4xl font-bold text-primary">
+
+                            180+
+
+                        </h3>
+
+                        <p class="mt-2 text-slate-500">
+
+                            Santri
+
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-xl p-6">
+
+                        <h3 class="text-4xl font-bold text-primary">
+
+                            15
+
+                        </h3>
+
+                        <p class="mt-2 text-slate-500">
+
+                            Ustadz/Ustadzah
+
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-3xl shadow-xl p-6">
+
+                        <h3 class="text-4xl font-bold text-primary">
+
+                            12+
+
+                        </h3>
+
+                        <p class="mt-2 text-slate-500">
+
+                            Tahun Mengabdi
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ======================================
+                    RIGHT
+            ======================================= -->
+
+            <div class="relative">
+
+                <!-- Image -->
+                <img src="Assets/diniyah/1.jpg"
+                    class="rounded-[40px] h-[620px] object-cover w-full shadow-2xl"
+                    alt="Madrasah Diniyah">
+
+                <!-- Floating Card -->
+                <div class="absolute top-8 left-8 bg-white rounded-3xl p-5 shadow-xl">
+
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-14 h-14 rounded-2xl bg-primary text-white flex items-center justify-center">
+
+                            <i class="fa-solid fa-star-and-crescent text-xl"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h4 class="font-bold">
+
+                                Pendidikan Islami
+
+                            </h4>
+
+                            <p class="text-slate-500 text-sm">
+
+                                Ilmu • Iman • Akhlak
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Bottom Card -->
+                <div class="absolute -bottom-8 right-8 bg-primary text-white rounded-3xl p-8 shadow-2xl">
+
+                    <p class="uppercase tracking-[4px] text-sm">
+
+                        Program Unggulan
+
+                    </p>
+
+                    <h3 class="text-2xl font-bold mt-2">
+
+                        Tahfidz • Tahsin • Fiqih • Akhlak
+
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+  <!-- =========================================
+        INFORMASI MADRASAH DINIYAH
+========================================== -->
+<section class="py-24 bg-gradient-to-b from-slate-50 via-white to-slate-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span class="uppercase tracking-[5px] text-primary font-semibold">
+                Profil Madrasah
+            </span>
+
+            <h2 class="mt-4 text-5xl font-bold text-slate-900">
+                Informasi MDT Miftahul Hidayah
+            </h2>
+
+            <p class="mt-5 text-slate-600 leading-8">
+                Madrasah Diniyah Takmiliyah di bawah naungan Yayasan Pendidikan Islam
+                Miftahul Hidayah yang berkomitmen membentuk generasi muslim yang
+                berilmu, beriman, dan berakhlakul karimah.
+            </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="overflow-hidden rounded-[40px] bg-white shadow-2xl">
+
+            <!-- =========================
+                    HEADER
+            ========================== -->
+
+            <div class="bg-gradient-to-r from-primary via-emerald-600 to-emerald-500 px-10 lg:px-14 py-12 text-white">
+
+                <div class="flex flex-col lg:flex-row items-center gap-8">
+
+                    <!-- Logo -->
+                    <div class="flex-shrink-0">
+
+                        <img
+                            src="Assets/mdt/logo.png"
+                            alt="Logo MDT"
+                            class="w-32 h-32 rounded-full bg-white p-3 shadow-xl object-contain">
+
+                    </div>
+
+                    <!-- Text -->
+                    <div class="flex-1 text-center lg:text-left">
+
+                        <h3 class="text-4xl font-black">
+                            MDT MIFTAHUL HIDAYAH
+                        </h3>
+
+                        <p class="mt-3 text-lg text-green-100">
+                            Yayasan Pendidikan Islam Miftahul Hidayah
+                        </p>
+
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
+
+                            <span class="bg-white text-primary px-5 py-2 rounded-full font-semibold">
+                                NSPP : 311232050100
+                            </span>
+
+                            <span class="bg-yellow-300 text-slate-900 px-5 py-2 rounded-full font-semibold">
+                                Madrasah Diniyah
+                            </span>
+
+                            <span class="bg-emerald-200 text-primary px-5 py-2 rounded-full font-semibold">
+                                EMIS 2025/2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- =========================
+                    STATISTIK
+            ========================== -->
+
+            <div class="grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x">
+
+                <div class="p-8 text-center">
+
+                    <div class="w-16 h-16 rounded-2xl bg-primary/10 mx-auto flex items-center justify-center">
+
+                        <i class="fa-solid fa-users text-2xl text-primary"></i>
+
+                    </div>
+
+                    <h3 class="mt-5 text-5xl font-black text-primary">
+                        79
+                    </h3>
+
+                    <p class="mt-2 text-slate-500">
+                        Total Santri
+                    </p>
+
+                </div>
+
+                <div class="p-8 text-center">
+
+                    <div class="w-16 h-16 rounded-2xl bg-primary/10 mx-auto flex items-center justify-center">
+
+                        <i class="fa-solid fa-chalkboard-user text-2xl text-primary"></i>
+
+                    </div>
+
+                    <h3 class="mt-5 text-5xl font-black text-primary">
+                        5
+                    </h3>
+
+                    <p class="mt-2 text-slate-500">
+                        Ustadz/Ustadzah
+                    </p>
+
+                </div>
+
+                <div class="p-8 text-center">
+
+                    <div class="w-16 h-16 rounded-2xl bg-primary/10 mx-auto flex items-center justify-center">
+
+                        <i class="fa-solid fa-school text-2xl text-primary"></i>
+
+                    </div>
+
+                    <h3 class="mt-5 text-5xl font-black text-primary">
+                        6
+                    </h3>
+
+                    <p class="mt-2 text-slate-500">
+                        Rombel
+                    </p>
+
+                </div>
+
+                <div class="p-8 text-center">
+
+                    <div class="w-16 h-16 rounded-2xl bg-primary/10 mx-auto flex items-center justify-center">
+
+                        <i class="fa-solid fa-book-quran text-2xl text-primary"></i>
+
+                    </div>
+
+                    <h3 class="mt-5 text-4xl font-black text-primary">
+                        MDT
+                    </h3>
+
+                    <p class="mt-2 text-slate-500">
+                        Jenis Lembaga
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- =========================
+                    INFORMASI
+            ========================== -->
+
+            <div class="grid lg:grid-cols-2 gap-12 p-10 lg:p-14">
+
+                <!-- Informasi -->
+                <div>
+
+                    <h3 class="text-2xl font-bold text-slate-900 mb-8">
+                        Informasi Lembaga
+                    </h3>
+
+                    <div class="space-y-5">
+
+                        <div class="flex justify-between items-center border-b pb-4">
+
+                            <span class="text-slate-500">Mudir / Pimpinan</span>
+
+                            <span class="font-semibold text-right">
+                                Neng Siti Khotimah Jahroh, S.Pd.
+                            </span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center border-b pb-4">
+
+                            <span class="text-slate-500">NSPP</span>
+
+                            <span class="font-semibold">
+                                311232050100
+                            </span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center border-b pb-4">
+
+                            <span class="text-slate-500">Santri Putra</span>
+
+                            <span class="font-semibold">
+                                38 Orang
+                            </span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center border-b pb-4">
+
+                            <span class="text-slate-500">Santri Putri</span>
+
+                            <span class="font-semibold">
+                                41 Orang
+                            </span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center border-b pb-4">
+
+                            <span class="text-slate-500">Ustadz</span>
+
+                            <span class="font-semibold">
+                                2 Orang
+                            </span>
+
+                        </div>
+
+                        <div class="flex justify-between items-center">
+
+                            <span class="text-slate-500">Ustadzah</span>
+
+                            <span class="font-semibold">
+                                3 Orang
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Lokasi -->
+                <div>
+
+                    <div class="rounded-3xl bg-slate-50 border p-8 h-full">
+
+                        <div class="w-16 h-16 rounded-2xl bg-primary text-white flex items-center justify-center">
+
+                            <i class="fa-solid fa-location-dot text-2xl"></i>
+
+                        </div>
+
+                        <h3 class="mt-6 text-2xl font-bold">
+                            Lokasi Madrasah
+                        </h3>
+
+                        <p class="mt-5 leading-8 text-slate-600">
+
+                            KP. Cinisti RT 01 / RW 07<br>
+                            Desa Cinisti<br>
+                            Kecamatan Bayongbong<br>
+                            Kabupaten Garut<br>
+                            Provinsi Jawa Barat
+
+                        </p>
+
+                        <div class="mt-8 rounded-2xl bg-primary/10 p-6">
+
+                            <div class="flex items-center gap-3">
+
+                                <i class="fa-solid fa-circle-check text-primary"></i>
+
+                                <h4 class="font-bold text-primary">
+                                    Data EMIS Aktif
+                                </h4>
+
+                            </div>
+
+                            <p class="mt-3 text-slate-600 leading-7">
+
+                                Data lembaga telah diperbarui pada sistem
+                                EMIS Semester Genap Tahun Pelajaran
+                                2025/2026.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- =========================
+                    CTA
+            ========================== -->
+
+            <div class="border-t bg-slate-50 px-10 lg:px-14 py-10">
+
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+
+                    <div class="max-w-2xl">
+
+                        <span class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-primary text-sm font-semibold">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            Data Resmi EMIS
+
+                        </span>
+
+                        <h3 class="mt-5 text-2xl font-bold text-slate-900">
+                            Informasi Terverifikasi
+                        </h3>
+
+                        <p class="mt-3 text-slate-600 leading-7">
+                            Seluruh data profil MDT Miftahul Hidayah berasal dari
+                            sistem EMIS sehingga informasi yang ditampilkan
+                            merupakan data resmi lembaga.
+                        </p>
+
+                    </div>
+
+                    <div class="flex flex-wrap justify-center gap-4">
+
+                        <a href="detail-emis.html"
+                            class="inline-flex items-center gap-3 rounded-full bg-primary px-7 py-4 text-white font-semibold shadow-lg transition hover:-translate-y-1">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            Lihat Detail EMIS
+
+                        </a>
+
+                        <a href="Assets/pdf/BAP_2025_2026_Genap_311232050100.pdf"
+                            target="_blank"
+                            class="inline-flex items-center gap-3 rounded-full border-2 border-primary px-7 py-4 text-primary font-semibold transition hover:bg-primary hover:text-white">
+
+                            <i class="fa-solid fa-file-pdf"></i>
+
+                            Download PDF
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+        INFORMASI PONDOK PESANTREN
+========================================== -->
+<section class="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-emerald-50 py-24">
+
+    <!-- Blur Background -->
+    <div
+        class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-emerald-300/20 blur-3xl">
+    </div>
+
+    <div
+        class="absolute -bottom-40 -right-40 h-96 w-96 rounded-full bg-primary/20 blur-3xl">
+    </div>
+
+    <!-- Pattern -->
+    <div
+        class="absolute inset-0 opacity-[0.03]"
+        style="background-image: radial-gradient(#15803d 1px, transparent 1px); background-size:32px 32px;">
+    </div>
+
+    <!-- Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+
+        <!-- Isi Section di sini -->
+         <!-- =========================
+        HEADING
+========================= -->
+<div class="text-center max-w-4xl mx-auto mb-16">
+
+    <span
+        class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-5 py-2 text-primary font-semibold uppercase tracking-[4px]">
+
+        <i data-lucide="landmark"></i>
+        Profil Pesantren
+
+    </span>
+
+    <h2
+        class="mt-6 text-4xl md:text-5xl font-black text-slate-900 leading-tight">
+
+        Pondok Pesantren
+        <span class="text-primary">
+            Miftahul Hidayah
+        </span>
+
+    </h2>
+
+    <p
+        class="mt-6 text-lg leading-9 text-slate-600">
+
+        Pondok Pesantren Miftahul Hidayah merupakan lembaga pendidikan Islam
+        di bawah naungan <strong>Yayasan Pendidikan Islam Miftahul Hidayah</strong>
+        yang berkomitmen mencetak generasi muslim yang berilmu,
+        berakhlakul karimah, mandiri, serta mampu mengamalkan nilai-nilai
+        Al-Qur'an dan As-Sunnah dalam kehidupan sehari-hari.
+
+    </p>
+
+</div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- =========================================
+            GALERI MADRASAH DINIYAH
+========================================== -->
+<section class="py-24 bg-[#FAFAF8]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+
+            <span
+                class="inline-block rounded-full bg-emerald-100 px-5 py-2 text-sm font-semibold uppercase tracking-[3px] text-primary">
+
+                Dokumentasi Kegiatan
+
+            </span>
+
+            <h2 class="mt-6 text-5xl font-bold text-slate-900">
+
+                Galeri MDT Miftahul Hidayah
+
+            </h2>
+
+            <p class="mt-6 text-lg leading-8 text-slate-600">
+
+                Dokumentasi berbagai kegiatan pembelajaran keislaman,
+                pembinaan akhlak, hafalan Al-Qur'an, praktik ibadah,
+                serta aktivitas santri dalam menumbuhkan generasi muslim
+                yang berilmu dan berakhlakul karimah.
+
+            </p>
+
+        </div>
+
+        <!-- Gallery -->
+        <div class="grid lg:grid-cols-12 gap-6">
+
+            <!-- Large Image -->
+            <a href="#"
+                class="group relative overflow-hidden rounded-[32px] lg:col-span-5 lg:row-span-2 min-h-[640px]">
+
+                <img src="Assets/mdt/gallery1.jpg"
+                    class="absolute inset-0 w-full h-full object-cover duration-700 group-hover:scale-110"
+                    alt="Mengaji Bersama">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+
+                <div class="absolute left-8 bottom-8">
+
+                    <span class="inline-flex rounded-full bg-white/20 backdrop-blur px-4 py-2 text-white text-sm">
+
+                        Pembelajaran Al-Qur'an
+
+                    </span>
+
+                    <h3 class="mt-4 text-3xl font-bold text-white">
+
+                        Mengaji Bersama
+
+                    </h3>
+
+                    <p class="mt-3 max-w-sm text-white/80">
+
+                        Kegiatan pembelajaran membaca dan memahami Al-Qur'an
+                        dengan bimbingan ustadz dan ustadzah.
+
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Tahfidz -->
+            <a href="#"
+                class="group relative overflow-hidden rounded-[28px] lg:col-span-4 h-[300px]">
+
+                <img src="Assets/mdt/gallery2.jpg"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110"
+                    alt="Tahfidz">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute left-6 bottom-6">
+
+                    <h4 class="text-white text-xl font-bold">
+
+                        Tahfidz Al-Qur'an
+
+                    </h4>
+
+                </div>
+
+            </a>
+
+            <!-- Video -->
+            <div id="videoBtn"
+                class="group relative overflow-hidden rounded-[28px] lg:col-span-3 h-[300px] cursor-pointer">
+
+                <img src="Assets/mdt/video-thumb.jpg"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110"
+                    alt="Video Profil">
+
+                <div class="absolute inset-0 bg-black/40"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+
+                    <div
+                        class="w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-2xl group-hover:scale-110 duration-300">
+
+                        <span class="text-3xl ml-1">
+
+                            ▶
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="absolute left-6 bottom-6">
+
+                    <h4 class="text-lg font-semibold text-white">
+
+                        Video Profil Madrasah
+
+                    </h4>
+
+                </div>
+
+            </div>
+
+            <!-- Praktik Ibadah -->
+            <a href="#"
+                class="group relative overflow-hidden rounded-[28px] lg:col-span-3 h-[300px]">
+
+                <img src="Assets/mdt/gallery3.jpg"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110"
+                    alt="Praktik Ibadah">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute left-6 bottom-6">
+
+                    <h4 class="text-white text-xl font-bold">
+
+                        Praktik Ibadah
+
+                    </h4>
+
+                </div>
+
+            </a>
+
+            <!-- Kegiatan -->
+            <a href="#"
+                class="group relative overflow-hidden rounded-[28px] lg:col-span-4 h-[300px]">
+
+                <img src="Assets/mdt/gallery4.jpg"
+                    class="w-full h-full object-cover duration-700 group-hover:scale-110"
+                    alt="Kegiatan Santri">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+
+                <div class="absolute left-6 bottom-6">
+
+                    <h4 class="text-white text-xl font-bold">
+
+                        Kegiatan Santri
+
+                    </h4>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- Button -->
+        <div class="mt-16 text-center">
+
+            <a href="galeri.html"
+                class="inline-flex items-center gap-3 rounded-xl bg-primary px-8 py-4 font-semibold text-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+                Lihat Galeri Lengkap
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <path d="M5 12h14" />
+                    <path d="m13 5 7 7-7 7" />
+
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================
+        BERGABUNG BERSAMA KAMI
+========================== -->
+
+    <section id="cta"
+        class="relative overflow-hidden bg-gradient-to-r from-primary via-green-700 to-primary py-16 sm:py-20 lg:py-24">
+
+        <!-- Background -->
+        <div class="absolute -top-16 -left-16 h-48 w-48 rounded-full bg-secondary/20 blur-3xl sm:h-72 sm:w-72"></div>
+
+        <div class="absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-white/10 blur-3xl sm:h-72 sm:w-72"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="rounded-3xl border border-white/20 bg-white/10 backdrop-blur-xl p-6 sm:p-8 lg:p-14">
+
+                <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+                    <!-- Left -->
+
+                    <div class="text-center lg:text-left">
+
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-black">
+
+                            <i class="fa-solid fa-heart"></i>
+
+                            Bergabung Bersama Kami
+
+                        </span>
+
+                        <h2 class="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+
+                            Mari Wujudkan
+                            <span class="block">
+                                Generasi Islami
+                            </span>
+
+                            <span class="block">
+                                yang Berilmu &
+                                Berakhlak Mulia
+                            </span>
+
+                        </h2>
+
+                        <p class="mt-6 text-base sm:text-lg leading-8 text-green-100">
+
+                            Jadilah bagian dari keluarga besar
+                            Yayasan Pendidikan Islam Miftahul Hidayah.
+                            Bersama kami, putra-putri Anda akan tumbuh
+                            dalam lingkungan yang religius, nyaman,
+                            dan berkualitas.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Right -->
+
+                    <div class="rounded-3xl bg-white p-6 sm:p-8 shadow-2xl">
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="flex h-14 w-14 sm:h-16 sm:w-16 items-center justify-center rounded-2xl bg-green-100 text-2xl sm:text-3xl text-primary">
+
+                                <i class="fa-solid fa-user-graduate"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-800">
+
+                                    Pendaftaran Dibuka
+
+                                </h3>
+
+                                <p class="text-sm sm:text-base text-gray-500">
+
+                                    Tahun Ajaran 2026 / 2027
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8 space-y-4">
+
+                            <div class="flex items-start gap-3">
+
+                                <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+
+                                <span>Pendidikan Islami Terpadu</span>
+
+                            </div>
+
+                            <div class="flex items-start gap-3">
+
+                                <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+
+                                <span>Guru Profesional & Berpengalaman</span>
+
+                            </div>
+
+                            <div class="flex items-start gap-3">
+
+                                <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+
+                                <span>Lingkungan Aman & Nyaman</span>
+
+                            </div>
+
+                            <div class="flex items-start gap-3">
+
+                                <i class="fa-solid fa-circle-check text-primary mt-1"></i>
+
+                                <span>Fasilitas Lengkap</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+
+                            <a href="#"
+                                class="flex-1 rounded-full bg-primary py-4 text-center font-semibold text-white transition hover:bg-green-800">
+
+                                Daftar Sekarang
+
+                            </a>
+
+                            <a href="#"
+                                class="flex-1 rounded-full border border-primary py-4 text-center font-semibold text-primary transition hover:bg-primary hover:text-white">
+
+                                Hubungi Kami
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+            FOOTER
+========================== -->
+
+    <footer class="bg-slate-950 text-gray-300">
+
+        <!-- Top Footer -->
+
+        <div class="max-w-7xl mx-auto px-6 py-20">
+
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                <!-- Logo -->
+
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <div
+                            class="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center text-white text-2xl">
+
+                            <i class="fa-solid fa-mosque"></i>
+
+                        </div>
+
+                        <div>
+
+                            <h3 class="text-2xl font-bold text-white">
+
+                                YASPIMIYAH
+
+                            </h3>
+
+                            <p class="text-sm text-gray-400">
+
+                                Yayasan Pendidikan Islam
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <p class="mt-6 leading-8 text-gray-400">
+
+                        Yayasan Pendidikan Islam Miftahul Hidayah
+                        berkomitmen mencetak generasi muslim
+                        yang berilmu, berakhlak mulia,
+                        dan siap menghadapi tantangan zaman.
+
+                    </p>
+
+                    <!-- Social -->
+
+                    <div class="flex gap-4 mt-8">
+
+                        <a href="#"
+                            class="w-11 h-11 rounded-full bg-slate-800 hover:bg-primary duration-300 flex items-center justify-center">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-11 h-11 rounded-full bg-slate-800 hover:bg-primary duration-300 flex items-center justify-center">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-11 h-11 rounded-full bg-slate-800 hover:bg-primary duration-300 flex items-center justify-center">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                        <a href="#"
+                            class="w-11 h-11 rounded-full bg-slate-800 hover:bg-primary duration-300 flex items-center justify-center">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Menu -->
+
+                <div>
+
+                    <h3 class="text-xl font-semibold text-white mb-6">
+
+                        Navigasi
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Beranda</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Tentang</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Berita</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Galeri</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Kontak</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Unit Pendidikan -->
+
+                <div>
+
+                    <h3 class="text-xl font-semibold text-white mb-6">
+
+                        Unit Pendidikan
+
+                    </h3>
+
+                    <ul class="space-y-4">
+
+                        <li><a href="#" class="hover:text-secondary duration-300">Ponpes Miftahul Hidayah</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">TK Kober YASPIMIYAH</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">MDT Miftahul Hidayah</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">SMP IT YASPIMIYAH</a></li>
+
+                        <li><a href="#" class="hover:text-secondary duration-300">SMA IT YASPIMIYAH</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="text-xl font-semibold text-white mb-6">
+
+                        Hubungi Kami
+
+                    </h3>
+
+                    <div class="space-y-5">
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-location-dot text-secondary mt-1"></i>
+
+                            <p>
+                                Jl. Contoh No.123, Kabupaten Bandung, Jawa Barat
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-phone text-secondary mt-1"></i>
+
+                            <p>
+                                +62 812-3456-7890
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-envelope text-secondary mt-1"></i>
+
+                            <p>
+                                info@yaspimiyah.sch.id
+                            </p>
+
+                        </div>
+
+                        <div class="flex gap-4">
+
+                            <i class="fa-solid fa-clock text-secondary mt-1"></i>
+
+                            <p>
+
+                                Senin - Sabtu
+
+                                <br>
+
+                                07.00 - 16.00 WIB
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+
+        <div class="border-t border-slate-800">
+
+            <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center gap-4">
+
+                <p class="text-center lg:text-left">
+
+                    © 2026 YASPIMIYAH - Yayasan Pendidikan Islam Miftahul Hidayah.
+                    All Rights Reserved.
+
+                </p>
+
+                <div class="flex gap-6">
+
+                    <a href="#" class="hover:text-secondary duration-300">
+
+                        Kebijakan Privasi
+
+                    </a>
+
+                    <a href="#" class="hover:text-secondary duration-300">
+
+                        Syarat & Ketentuan
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!--========= modal vidio==========-->
+
+    <div id="videoModal" class="fixed inset-0 bg-black/80 hidden justify-center items-center z-50">
+
+        <div class="relative w-[90%] max-w-4xl">
+
+            <!-- Tombol Close -->
+
+            <button id="closeVideo" class="absolute -top-12 right-0 text-white text-5xl">
+
+                &times;
+
+            </button>
+
+            <!-- Video -->
+
+            <video id="videoPlayer" class="w-full rounded-xl" controls>
+
+                <source src="Assets/tk-kober/vidio/VID_20260309_083802.mp4" type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </div>
+    <script src="js/script.js">
+    </script>
+
+    <!-- lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+
+</body>
+
+</html>
