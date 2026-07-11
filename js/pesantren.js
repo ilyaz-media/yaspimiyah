@@ -107,5 +107,49 @@ counters.forEach(counter => {
 
 
 
-// daftar guru
+// ================================
+// VIDEO MODAL
+// ================================
+
+const videoBtn = document.getElementById("videoBtn");
+const videoModal = document.getElementById("videoModal");
+const closeVideo = document.getElementById("closeVideo");
+const videoPlayer = document.getElementById("videoPlayer");
+
+if (videoBtn && videoModal && closeVideo && videoPlayer) {
+
+    videoBtn.addEventListener("click", () => {
+
+        videoModal.classList.remove("hidden");
+        videoModal.classList.add("flex");
+
+        videoPlayer.play();
+
+    });
+
+    closeVideo.addEventListener("click", closeModal);
+
+    videoModal.addEventListener("click", (e) => {
+
+        if (e.target === videoModal) {
+
+            closeModal();
+
+        }
+
+    });
+
+    function closeModal() {
+
+        videoModal.classList.remove("flex");
+        videoModal.classList.add("hidden");
+
+        videoPlayer.pause();
+        videoPlayer.currentTime = 0;
+
+    }
+
+}
+
+
 
