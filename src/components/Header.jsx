@@ -1,0 +1,9 @@
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+
+const links = [['Beranda', '#beranda'], ['Tentang', '#tentang'], ['Unit pendidikan', '#unit'], ['Nilai kami', '#nilai'], ['Galeri', '#galeri']]
+
+export default function Header() {
+  const [open, setOpen] = useState(false)
+  return <header className="absolute inset-x-0 top-0 z-50"><nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8"><a href="#beranda" className="flex items-center gap-3 text-white"><img src="/Assets/yayasan/YPI MIFTAHUL HIDAYAH.png" alt="Logo Yaspimiyah" className="h-11 w-11 rounded-full bg-white object-contain p-1" /><span><strong className="block text-sm tracking-wide">YASPIMIYAH</strong><small className="text-xs text-white/65">Yayasan Pendidikan Islam</small></span></a><div className="hidden items-center gap-7 lg:flex">{links.map(([name, href]) => <a key={href} href={href} className="text-sm font-medium text-white/80 transition hover:text-amber-300">{name}</a>)}<a href="#kontak" className="rounded-full bg-amber-400 px-4 py-2.5 text-sm font-bold text-emerald-950 transition hover:bg-amber-300">Hubungi kami</a></div><button type="button" onClick={() => setOpen(!open)} className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white lg:hidden" aria-label="Buka menu">{open ? <X /> : <Menu />}</button></nav>{open && <div className="mx-4 rounded-2xl bg-white p-5 shadow-xl lg:hidden">{links.map(([name, href]) => <a key={href} href={href} onClick={() => setOpen(false)} className="block border-b border-slate-100 py-3 text-sm font-semibold text-slate-700 last:border-0">{name}</a>)}<a href="#kontak" onClick={() => setOpen(false)} className="mt-3 block rounded-xl bg-emerald-800 px-4 py-3 text-center text-sm font-bold text-white">Hubungi kami</a></div>}</header>
+}
