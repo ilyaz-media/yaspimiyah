@@ -48,21 +48,44 @@ function UnitPage({ unit }) {
 
 export default function App() {
   const [route, setRoute] = useState(window.location.hash)
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
+  // loading
   useEffect(() => {
-    const handleRoute = () => {
-      setLoading(true)
-      setRoute(window.location.hash)
-      window.setTimeout(() => setLoading(false), 520)
-    }
-    window.addEventListener('hashchange', handleRoute)
-    return () => window.removeEventListener('hashchange', handleRoute)
-  }, [])
+  const timer = setTimeout(() => {
+    setLoading(false);
+  }, 2000);
+
+  return () => clearTimeout(timer);
+}, []);
+
+
+ useEffect(() => {
+  const handleRoute = () => {
+    setLoading(true);
+
+    const hash = window.location.hash;
+
+    setTimeout(() => {
+      setRoute(hash);
+      setLoading(false);
+    }, 2000);
+  };
+
+  window.addEventListener("hashchange", handleRoute);
+
+  return () => {
+    window.removeEventListener("hashchange", handleRoute);
+  };
+}, []);
+
+  // scroll smooth
   useEffect(() => {
     if (route === '' || route === '#beranda' || route.startsWith('#unit/')) {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
   }, [route])
+
+
   useEffect(() => {
     const elements = document.querySelectorAll('[data-reveal]')
     const observer = new IntersectionObserver((entries) => {
@@ -71,8 +94,12 @@ export default function App() {
     elements.forEach((element) => observer.observe(element))
     return () => observer.disconnect()
   }, [route])
+
+
   const unit = units.find(item => route === `#unit/${item.slug}`)
+
   return (
+
     <div className="min-h-screen overflow-x-hidden bg-[#fcfcf9] text-slate-700">
       {loading && <div className="page-loader fixed inset-0 z-[100] grid place-items-center bg-emerald-950/95 text-white"><div className="relative grid h-28 w-28 place-items-center"><div className="loader-orbit absolute inset-0 rounded-full border-2 border-amber-300 border-t-transparent" /><div className="loader-orbit absolute inset-3 rounded-full border-2 border-emerald-300 border-b-transparent [animation-direction:reverse]" /><img src="/Assets/yayasan/YPI MIFTAHUL HIDAYAH.png" alt="Memuat halaman" className="h-14 w-14 rounded-full bg-white p-1" /></div><p className="mt-5 text-xs font-bold uppercase tracking-[.3em] text-amber-300">Yaspimiyah</p></div>}
       <Header />
