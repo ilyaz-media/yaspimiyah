@@ -15,5 +15,5 @@ export const footerLinks = [
 
 export const contact = {
   address: "Cinisti, Kabupaten Garut, Jawa Barat",
-  email: "info@yaspimiyah.sch.id",
+  email: "miftahulhidayathgrt@gmail.com",
 };

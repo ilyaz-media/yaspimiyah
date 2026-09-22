@@ -48,7 +48,7 @@ export default function Footer() {
             </a>
             <p className="flex gap-2">
               <Phone size={17} className="shrink-0 text-amber-400" />
-              Informasi melalui kontak resmi yayasan
+              +62-856-2441-7168
             </p>
           </div>
         </div>
