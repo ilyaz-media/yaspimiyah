@@ -1,16 +1,23 @@
-import { Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 import SectionTitle from "../../common/SectionTitle";
 
 export default function GaleriSection() {
   return (
     <section id="galeri" className="bg-white py-20 text-white sm:py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <SectionTitle
-          eyebrow="Sekilas kegiatan"
-          title="Momen kecil, pengalaman yang membentuk."
-          text="Lihat keseharian belajar, berkarya, dan bertumbuh bersama keluarga besar Yaspimiyah."
-          centered={false}
-        />
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <SectionTitle
+            eyebrow="Sekilas kegiatan"
+            title="Momen kecil, pengalaman yang membentuk."
+            text="Lihat keseharian belajar, berkarya, dan bertumbuh bersama keluarga besar Yaspimiyah."
+            centered={false}
+          />
+          <a
+            href="#galeri-lengkap"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-emerald-800 px-6 py-3.5 font-bold text-white transition hover:bg-emerald-700">
+            Galeri lengkap <ArrowRight size={18} />
+          </a>
+        </div>
         <div className="mt-10 grid gap-4 md:grid-cols-12 md:grid-rows-2">
           <img
             src="/Assets/smp/galeri/belajarinteraktif.jpg"

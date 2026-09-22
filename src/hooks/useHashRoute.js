@@ -35,10 +35,15 @@ export function useHashRoute() {
   return { route, loading };
 }
 
-// Scroll ke atas saat pindah halaman (beranda atau halaman unit)
+// Scroll ke atas saat pindah halaman (beranda, unit, atau galeri lengkap)
 export function useScrollToTop(route) {
   useEffect(() => {
-    if (route === "" || route === "#beranda" || route.startsWith("#unit/")) {
+    if (
+      route === "" ||
+      route === "#beranda" ||
+      route === "#galeri-lengkap" ||
+      route.startsWith("#unit/")
+    ) {
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [route]);
