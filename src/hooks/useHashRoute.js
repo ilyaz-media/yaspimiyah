@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const LOADING_DELAY = 2000;
+const LOADING_DELAY = 1000;
 
 export function useHashRoute() {
   const [route, setRoute] = useState(window.location.hash);
